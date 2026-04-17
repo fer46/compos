@@ -23,8 +23,11 @@ Compos tracks the **components**, **relationships**, **constraints**, **risks**,
 
 ### Claude Code plugin (recommended)
 
+In Claude Code, add the marketplace and install the plugin:
+
 ```text
-/install-plugin github:fer46/compos-plugin
+/plugin marketplace add fer46/compos-plugin
+/plugin install compos@compos-plugin
 ```
 
 This wires up the MCP server (`compos-mcp` via `uvx`, no pre-install) and three workflow skills into Claude Code. Prereq: [`uv`](https://docs.astral.sh/uv/).
