@@ -4,6 +4,8 @@ Persistent architectural memory for your codebase — legible to humans, queryab
 
 Compos tracks the **components**, **relationships**, **constraints**, **risks**, and **decisions** that make up your software system. Written by static analysis, updated by AI builders through an MCP server, reviewed by humans. The result: a map that stays in sync with your code, and gives AI tools the architectural context they need to make informed changes.
 
+> **Status:** Alpha. Free tier live on PyPI + Claude Code plugin marketplace. Actively looking for early testers — if you run it on a real codebase, we want to hear what's missing. See [Feedback](#feedback).
+
 ---
 
 ## Free tier (this repo's packages)
@@ -80,9 +82,20 @@ Each field carries **provenance** (static-analysis / ai-annotated / human-input)
 
 ---
 
-## Issues
+## Feedback
 
-Bugs and feature requests: [open an issue](https://github.com/fer46/compos/issues).
+Compos is in alpha. Two things would help enormously:
+
+1. **Try it on a real codebase** — install the plugin, run `compos analyze`, open Claude Code and exercise the MCP tools. Five minutes is enough to form an opinion.
+2. **Tell us what broke, what was missing, or what was confusing.** No feedback is too small.
+
+**Channels, in order of preference:**
+
+- **[Early-tester feedback form](https://github.com/fer46/compos/issues/new?template=feedback.yml)** — short structured form, 2 minutes to fill.
+- **[Bug report](https://github.com/fer46/compos/issues/new?template=bug.yml)** — for reproducible failures.
+- **[General issue](https://github.com/fer46/compos/issues/new)** — anything else.
+
+If you're on LinkedIn or email and prefer to reply there, that also works — everything gets read.
 
 ---
 

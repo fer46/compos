@@ -1,0 +1,53 @@
+name: Early-tester feedback
+description: Short structured feedback from trying Compos on a real codebase.
+title: "[feedback] "
+labels: ["feedback", "alpha"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for trying Compos. Two minutes of structured feedback is worth an hour of email back-and-forth — every field is optional, fill what's relevant.
+
+  - type: dropdown
+    id: surface
+    attributes:
+      label: What did you try?
+      multiple: true
+      options:
+        - Claude Code plugin (/plugin install)
+        - compos-cli (uv tool install / uvx)
+        - compos-mcp (wired into another MCP client)
+        - Only read the README
+    validations:
+      required: true
+
+  - type: textarea
+    id: codebase
+    attributes:
+      label: What kind of codebase did you run it on?
+      description: Rough shape is enough — language, size, monorepo vs. single repo, public vs. internal.
+      placeholder: e.g. "Python FastAPI backend + React frontend, ~15k LOC, monorepo"
+
+  - type: textarea
+    id: worked
+    attributes:
+      label: What worked?
+      description: Anything that behaved as expected or surprised you positively.
+
+  - type: textarea
+    id: broke
+    attributes:
+      label: What broke or was missing?
+      description: Errors, crashes, detections you expected but didn't see, tools that returned empty results, docs that were wrong.
+
+  - type: textarea
+    id: wanted
+    attributes:
+      label: What would make you keep using it?
+      description: The single most valuable thing we could add next, in your opinion.
+
+  - type: input
+    id: contact
+    attributes:
+      label: How can we reach you for follow-up? (optional)
+      description: GitHub handle, email, or LinkedIn — only if you'd like us to follow up.
